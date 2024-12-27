@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now Alert</title>
+  <script>
+    // Function to display the alert message
+    function showOrderNowAlert() {
+      alert("Limited Time Offer! Place your order now and enjoy exclusive discounts. Don’t miss out!");
+    }
+
+    // Attach event listener after the page loads
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("orderNowButton").addEventListener("click", showOrderNowAlert);
+    });
+  </script>
+</head>
+<body>
+  <h1>Welcome to Our Store</h1>
+  <h1>Order Now</h1>
+    </header>
+
+    <section id="order">
+        <h2>Place Your Order</h2>
+        <form id="orderForm" align="left">
+            <label for="product">Product:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a product</option>
+                <option value="Product 1">Product 1</option>
+                <option value="Product 2">Product 2</option>
+                <option value="Product 3">Product 3</option>
+            </select><br><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            
+			
+        </form>
+        <p id="orderSuccessMessage" style="display:none;">Thank you! Your order has been placed.</p>
+		</div>
+		</div>
+    </section>
+  <button id="orderNowButton">Order Now</button>
+</body>
+</html>

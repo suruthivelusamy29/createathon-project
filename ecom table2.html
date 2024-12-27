@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - product page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\KarthiS\Desktop\ADD PRGM\ecom product.css">
+    <link rel="stylesheet" href="css/product.css">
+	<script>
+const addReviewButton = document.getElementById('addReviewBtn');
+
+// Add a click event listener to the button
+addReviewButton.addEventListener('click', () => {
+    // Show a popup message
+    alert('Thanks for giving your review!');
+});
+</script>	
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar bg">
+        <ul class="links-container">
+            <li class="link-item"><a href="#" class="link active" >home</a></li>
+            <li class="link-item"><a href="#" class="link">product</a></li>
+            <li class="link-item"><a href="#" class="link">about</a></li>
+            <li class="link-item"><a href="#" class="link">contact</a></li>
+        </ul>
+        
+    </nav>
+
+    <!-- product detail -->
+    <section class="product-section">
+        <img src="C:\Users\KarthiS\Downloads\WhatsApp Image 2024-12-26 at 10.27.49 PM.jpeg" class="product-image" alt="">
+        <div class="product-detail">
+            <h1 class="product-title">premium table</h1>
+            <p class="product-des">premium quality working table.</p>
+            <div class="ratings">
+                <img src="C:\Users\KarthiS\Downloads\fill star (1).png" class="star" alt="">
+                <img src="C:\Users\KarthiS\Downloads\fill star (1).png" class="star" alt="">
+                <img src="C:\Users\KarthiS\Downloads\fill star (1).png" class="star" alt="">
+                <img src="C:\Users\KarthiS\Downloads\fill star (1).png" class="star" alt="">
+                <img src="C:\Users\KarthiS\Downloads\no fill star (1).png" class="star" alt="">
+                <span class="rating-count">2,723 reviews</span>
+            </div>
+            <p class="price">Rs. 18,560</p>
+            <div class="btn-container">
+                <a href="C:\Users\KarthiS\Desktop\ADD PRGM\ecom buyNow.html">buy now</a>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="detail-des">
+        <h1 class="section-title">Details</h1>
+        <p class="des">Crafted with precision and designed for modern living spaces, this chest of drawers offers versatile storage solutions while enhancing the aesthetic appeal of your room. Whether you're organizing clothing, accessories, or household essentials, the HDHMR Chest of Drawers is your ultimate storage companion.</p>
+    </section>
+
+    <!-- review section -->
+    <section class="review-section">
+        <h1 class="section-title">Reviews</h1>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 1.png" alt=""></div>
+                <h2 class="review-title">best quality more than my expectation</h2>
+                <p class="review">Excellent product Reviewed in India on 29 October 2024 <br>Excellent product with affordable price although delivery was a little bit late.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 2.png" alt=""></div>
+                <h2 class="review-title">on time delivery with best packaging</h2>
+                <p class="review">This sofa is so comfortable and looks very good. It was assembled within 24 hours of delivery. I am very happy with the purchase and would highly recommend it.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 3.png" alt=""></div>
+                <h2 class="review-title">very helpful customer support</h2>
+                <p class="review">As per the price aspect the item was good and delivered comfortably, need a video to guide there is no such video assistance provided, quality wise ok...ok...product...</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 4.png" alt=""></div>
+                <h2 class="review-title">very easy to refund/return products</h2>
+                <p class="review">Good quality sofa. Gives premium and royal look to your living room.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- add review form -->
+    <section class="add-review-section">
+        <h1 class="section-title">add a review</h1>
+        <input type="text" class="review-headline" placeholder="review headline">
+        <textarea placeholder="review" class="review-field"></textarea>
+        
+        <button id="addReviewBtn">Add Review</button>
+    </section>
+
+   
+
+    
+	
+
+ </script>
+    
+</body>
+</html>
